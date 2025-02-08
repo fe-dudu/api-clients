@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/pnpm-setup-node
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install --frozen-lockfile --ignore-script
       - run: |
           git config --global user.name "fe-dudu"
           git config --global user.email "ehehwhdwhd@naver.com"
