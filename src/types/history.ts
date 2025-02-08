@@ -12,6 +12,7 @@ export interface paths {
       cookie?: never;
     };
     get: operations['GET EvmTransactionHistory/GetTransactions'];
+    put?: never;
     post?: never;
     delete?: never;
     options?: never;
