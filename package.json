@@ -1,5 +1,5 @@
 {
-  "name": "api-clients",
+  "name": "sync-api-kit",
   "version": "1.0.0",
   "author": "fe-dudu <ehehwhdwhd@naver.com>",
   "description": "Swagger-based clients for multiple APIs for the frontend, with daily type checks.",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fe-dudu/api-clients.git"
+    "url": "https://github.com/fe-dudu/sync-api-kit.git"
   },
   "files": ["dist"],
   "type": "module",

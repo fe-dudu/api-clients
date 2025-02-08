@@ -1,9 +1,6 @@
 name: Check diff (daily)
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '0 23 * * 0-4'
   workflow_dispatch:
