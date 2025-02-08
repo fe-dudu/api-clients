@@ -62,12 +62,12 @@ if (!error) {
 
 # Features
 
-- Fields not defined as nullable are marked as required.
-- Types are sorted in alphabetical order.
+- Fields not defined as nullable are marked as required. (`--properties-required-by-default true`)
+- Types are sorted in alphabetical order. (`--alphabetize true`)
 - Extracts response types for both GET and POST methods.
 - Detects type changes daily via GitHub Actions.
 
-# Setting
+# Settings
 
 - Settings > Actions > General > Workflow permissions > Read and write permissions > Save
 - Settings > Secrets And Variables > Actions > New repository secret > PERSONAL_ACCESS_TOKEN
