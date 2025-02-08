@@ -4,6 +4,22 @@
  */
 
 export interface paths {
+  '/history/v1/evm/{network}/{walletAddress}/{handler}': {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get: operations['GET EvmTransactionHistory/GetTransactions'];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   '/history/v1/substrate/{network}/{substrateAddress}': {
     parameters: {
       query?: never;
