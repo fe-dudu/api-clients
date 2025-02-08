@@ -1,15 +1,18 @@
 {
   "name": "sync-api-kit",
   "version": "1.0.0",
-  "author": "fe-dudu <ehehwhdwhd@naver.com>",
   "description": "Swagger-based clients for multiple APIs for the frontend, with daily type checks.",
-  "keywords": ["openapi-typescript", "daily type check"],
-  "license": "MIT",
+  "keywords": [
+    "openapi-typescript",
+    "daily type check"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/fe-dudu/sync-api-kit.git"
   },
-  "files": ["dist"],
+  "license": "MIT",
+  "author": "fe-dudu <ehehwhdwhd@naver.com>",
+  "packageManager": "pnpm@9.14.4",
   "type": "module",
   "exports": {
     ".": {
@@ -26,14 +29,20 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
-    "rimraf": "rimraf",
-    "check": "biome check --write --unsafe",
-    "generate-type": "openapi-typescript --properties-required-by-default true --alphabetize true && pnpm check",
     "changeset": "changeset",
     "changeset:publish": "pnpm build && changeset publish",
-    "changeset:version": "changeset version && pnpm i --lockfile-only"
+    "changeset:version": "changeset version && pnpm i --lockfile-only",
+    "check": "biome check --write --unsafe",
+    "generate-type": "openapi-typescript --properties-required-by-default true --alphabetize true && pnpm check",
+    "postinstall": "packlint sort -R",
+    "preinstall": "corepack enable",
+    "prepare": "husky",
+    "rimraf": "rimraf"
   },
   "dependencies": {
     "openapi-fetch": "^0.13.4"
@@ -42,12 +51,17 @@
     "@biomejs/biome": "^1.9.4",
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.12",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "husky": "^9.1.7",
+    "knip": "^5.43.6",
+    "lint-staged": "^15.4.3",
     "openapi-typescript": "^7.6.1",
+    "packlint": "^0.2.4",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.6",
     "typescript": "^5.7.3"
   },
-  "packageManager": "pnpm@9.14.4",
   "publishConfig": {
     "access": "public"
   }
