@@ -1,0 +1,17 @@
+apis:
+  token:
+    root: https://api-dev.creditcoin.org/token/swagger/token-v1/swagger.json
+    x-openapi-ts:
+      output: ./src/types/token.ts
+  network:
+    root: https://api-dev.creditcoin.org/network/swagger/networks-v1/swagger.json
+    x-openapi-ts:
+      output: ./src/types/network.ts
+  history:
+    root: https://api-dev.creditcoin.org/history/swagger/history-v1/swagger.json
+    x-openapi-ts:
+      output: ./src/types/history.ts
+  notification:
+    root: https://api-dev.creditcoin.org/notification/swagger/notifications-v1/swagger.json
+    x-openapi-ts:
+      output: ./src/types/notification.ts
