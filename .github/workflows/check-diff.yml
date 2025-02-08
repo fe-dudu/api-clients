@@ -34,6 +34,9 @@ jobs:
             git push origin $branch_name
 
             gh pr create --title "API type change" --body "This is a PR created by GitHub Actions." --base main --head $branch_name
+          else
+            pnpm rimraf ./diff.patch
+            exit 0
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
