@@ -1,6 +1,6 @@
 {
   "name": "sync-api-kit",
-  "version": "1.0.1-rc.1",
+  "version": "1.0.1",
   "description": "Swagger-based clients for multiple APIs for the frontend, with daily type checks.",
   "keywords": [
     "openapi-typescript",
