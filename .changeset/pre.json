@@ -4,5 +4,7 @@
   "initialVersions": {
     "sync-api-kit": "1.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "thirty-bobcats-burn"
+  ]
 }

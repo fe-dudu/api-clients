@@ -1,8 +1,11 @@
 {
   "name": "sync-api-kit",
-  "version": "1.0.0",
+  "version": "1.0.1-rc.0",
   "description": "Swagger-based clients for multiple APIs for the frontend, with daily type checks.",
-  "keywords": ["openapi-typescript", "daily type check"],
+  "keywords": [
+    "openapi-typescript",
+    "daily type check"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/fe-dudu/sync-api-kit.git"
@@ -26,7 +29,9 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "changeset": "changeset",
