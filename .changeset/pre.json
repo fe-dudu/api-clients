@@ -4,5 +4,8 @@
   "initialVersions": {
     "sync-api-kit": "1.0.0"
   },
-  "changesets": ["thirty-bobcats-burn"]
+  "changesets": [
+    "neat-mirrors-pump",
+    "thirty-bobcats-burn"
+  ]
 }
