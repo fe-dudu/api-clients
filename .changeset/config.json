@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.5/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "fe-dudu/react-fog" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "fe-dudu/sync-api-kit" }],
   "commit": false,
   "fixed": [],
   "linked": [],

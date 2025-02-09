@@ -30,6 +30,8 @@
   "scripts": {
     "build": "tsup",
     "changeset": "changeset",
+    "changeset:enter-rc": "pnpm changeset pre enter rc",
+    "changeset:exit-rc": "pnpm changeset pre exit rc",
     "changeset:publish": "pnpm build && changeset publish",
     "changeset:version": "changeset version && pnpm i --lockfile-only",
     "format": "biome check --write --unsafe",
